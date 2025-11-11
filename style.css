@@ -1,0 +1,36 @@
+@font-face {
+    font-family: RobotoMono;
+    src: url(fonts/RobotoMono-VariableFont_wght.ttf);
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, blue, black);
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    color: white;
+    font-family: RobotoMono;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    width: 500px;
+    height: 500px;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.downloadImg{
+    cursor: not-allowed;
+}
