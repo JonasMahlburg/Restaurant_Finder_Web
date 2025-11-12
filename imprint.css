@@ -21,6 +21,20 @@ header{
     align-items: start;
     position: absolute;
     top: 0;
+    width: 100%;
+}
+
+.backBtn{
+        color: white;
+        font-family: RobotoMono;
+        text-decoration: none;
+        cursor: pointer;
+        padding-left: 30px;
+        padding-top: 30px;
+}
+
+.backBtn:hover{
+    color: red;
 }
 
 .imprintClass{

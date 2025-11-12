@@ -2,7 +2,8 @@
     font-family: RobotoMono;
     src: url(fonts/RobotoMono-VariableFont_wght.ttf);
 }
-body{
+
+body {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -10,27 +11,50 @@ body{
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
+    padding: 10px;
     color: white;
     font-family: RobotoMono;
 }
-header{
+
+header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.logo{
-    width: 500px;
-    height: 500px;
+.imprintLink {
+    color: white;
+    text-decoration: none;
+}
+.imprintLink:hover{
+    color: red;
+    text-decoration: dotted;
+    font-size: larger;
 }
 
-.description{
+.logo {
+    max-width: 500px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+}
+
+.description {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.downloadImg{
+.downloadImg {
     cursor: not-allowed;
 }
+
+/*------------------------ Media-Querry ----------------------*/
+
+/* @media(max-width: 650px){
+    .logo{
+        max-width: 0px;
+        max-height: 300px;
+    }
+} */
