@@ -2,6 +2,16 @@
     font-family: RobotoMono;
     src: url(fonts/RobotoMono-VariableFont_wght.ttf);
 }
+
+html, body {
+    height: 100%;
+    overflow-y: hidden; /* verhindert vertikale Scrollbar */
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body{
     display: flex;
     align-items: center;
@@ -9,6 +19,8 @@ body{
     justify-content: center;
     background: linear-gradient(to bottom, blue, black);
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
     min-height: 100vh;
     margin: 0;
     color: white;
@@ -34,7 +46,7 @@ header{
 }
 
 .backBtn:hover{
-    color: red;
+    text-decoration: underline;
 }
 
 .imprintClass{
@@ -42,7 +54,7 @@ header{
         align-items: center;
         flex-direction: column;
         justify-content: center;
-        border: 2px, solid;
+        border: 2px, solid, white;
         border-radius: 15px;
         padding: 20px;
         padding-top: 0;
