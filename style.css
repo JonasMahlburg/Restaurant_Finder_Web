@@ -29,11 +29,29 @@ header {
     align-items: center;
 }
 
+/* SECTION: Links */
+
 .imprintLink {
     color: white;
     text-decoration: none;
 }
 .imprintLink:hover{
+    text-decoration:underline ;
+}
+
+.testFlightLink {
+    color: white;
+    text-decoration: none;
+}
+.testFlightLink:hover{
+    text-decoration:underline ;
+}
+
+.wishKitLink {
+    color: white;
+    text-decoration: none;
+}
+.wishKitLink:hover{
     text-decoration:underline ;
 }
 
