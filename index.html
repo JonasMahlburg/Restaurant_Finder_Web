@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="assets/Restaurant_Finder-iOS-Default-1024x1024@1x.png">
     <title>Restaurant Finder</title>
+    <script src="https://cdn.apple-mapkit.com/mk/5.x.x/mapkit.js" crossorigin></script>
 </head>
 <body>
     <header>
@@ -14,12 +15,31 @@
     <section>
         <img class="logo" src="assets/Restaurant_Finder-iOS-Default-1024x1024@1x.png" alt="App Logo">
     </section>
+
     <section class="descriptionSection">
         <article class="description">
             <p>Die neue Art um Restaurants in deiner Nähe zu finden.</p>
             <p>Finde neue lokale Restaurants</p>
         </article>
     </section>
+
+    <!-- Karte -->
+    <section class="mapSection">
+        <div class="mapFilter" id="mapFilter">
+            <!-- Filter-Chips werden von map.js erzeugt -->
+        </div>
+        <div class="mapLayout">
+            <div id="map"></div>
+            <aside class="placeDetail" id="placeDetail" hidden>
+                <button class="placeDetailClose" id="placeDetailClose" aria-label="Schließen">&times;</button>
+                <p class="placeCategory" id="placeCategory"></p>
+                <div id="placeCard"></div>
+            </aside>
+        </div>
+        <p class="mapHint" id="mapHint"></p>
+    </section>
+
+    <!-- links and infos about app -->
     <section class="linkSection">
         <article class="feedbackArticle">
             <p>Für Feedback bin ich sehr dankbar.</p> <br>
@@ -43,5 +63,8 @@
     <footer>
         <a class="imprintLink" href="imprint.html">Impressum</a>
     </footer>
+
+    <script src="mapkit-config.js"></script>
+    <script src="map.js"></script>
 </body>
 </html>
