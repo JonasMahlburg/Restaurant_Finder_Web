@@ -39,6 +39,27 @@ header {
     text-decoration:underline ;
 }
 
+.linkSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testFlightArticle{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.feedbackArticle{
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .testFlightLink {
     color: white;
     text-decoration: none;
